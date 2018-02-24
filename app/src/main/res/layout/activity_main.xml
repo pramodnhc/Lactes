@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_combo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.lactes.MainActivity">
+
+
+    <EditText
+        android:id="@+id/txtusername"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="148dp"
+        android:background="@drawable/usernamebg"
+        android:ems="10"
+        android:hint="  Email"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="150dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/signinbut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnforgotpass" />
+
+    <Button
+        android:id="@+id/btnforgotpass"
+        android:layout_width="168dp"
+        android:layout_height="14dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/forgotpass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtpassword" />
+
+    <Button
+        android:id="@+id/btnSigninSocial"
+        android:layout_width="180dp"
+        android:layout_height="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/signinwithsocial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignIn" />
+
+    <ImageButton
+        android:id="@+id/btngoogleplus"
+        android:layout_width="121dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="false"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="@string/logo"
+        android:cropToPadding="false"
+        android:src="@drawable/googleplusmm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSigninSocial" />
+
+    <ImageView
+        android:id="@+id/line1imageView"
+        android:layout_width="11dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/line"
+        app:layout_constraintStart_toEndOf="@+id/btngoogleplus"
+        app:layout_constraintTop_toBottomOf="@+id/btnSigninSocial" />
+
+    <ImageButton
+        android:id="@+id/btnfacebook"
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/transparent"
+        android:src="@drawable/facebookm"
+        app:layout_constraintStart_toEndOf="@+id/line1imageView"
+        app:layout_constraintTop_toBottomOf="@+id/btnSigninSocial" />
+
+    <ImageView
+        android:id="@+id/line2imageView"
+        android:layout_width="11dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/line"
+        app:layout_constraintStart_toEndOf="@+id/btnfacebook"
+        app:layout_constraintTop_toBottomOf="@+id/btnSigninSocial" />
+
+    <ImageButton
+        android:id="@+id/btntwitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@android:color/transparent"
+        android:src="@drawable/twitterm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.356"
+        app:layout_constraintStart_toEndOf="@+id/line2imageView"
+        app:layout_constraintTop_toBottomOf="@+id/btnSigninSocial" />
+
+    <Button
+        android:id="@+id/btncreateacc"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/createacc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnfacebook"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/txtpassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/passworgbg"
+        android:ems="10"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textColorLink="@android:color/background_light"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtusername" />
+
+</android.support.constraint.ConstraintLayout>
